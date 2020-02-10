@@ -1,0 +1,27 @@
+<!-- ./templates/accuracy.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <h1>Create new monster</h1>
+        <a href="/">Home</a>
+        <a href="/combat">Combat</a>
+        <a href="/new_monster">New Monster</a>
+        <a href="/monsters">Monsters</a>
+        <a href="/help">Help</a>
+    </head>
+    <body>
+        <form id=new_mon action="/cre_mon" method="POST" enctype="multipart/form-data">
+            Name: <input type="text" name="name" value="MANSTAH"><br>
+            Hit Points: <input type="number" name="hp" value="0"><br>
+            Armor Class: <input type="number" name="ac" value="0"><br>
+            Strength: <input type="number" name="str" value="0"><br>
+            Dexterity: <input type="number" name="dex" value="0"><br>
+            Constitution: <input type="number" name="con" value="0"><br>
+            Intelligence: <input type="number" name="int" value="0"><br>
+            Wisdom: <input type="number" name="wis" value="0"><br>
+            Charisma: <input type="number" name="char" value="0"><br>
+            <input type="submit" value="Submit">
+        </form>
+  </body>
+</html>
